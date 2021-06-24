@@ -11,32 +11,30 @@ require __DIR__ . '/database/lista.php';
     <link rel="stylesheet" href="./assets/css/style.css">
 </head>
 <body>
-    <div id="app">
-
-        <header>
+    <header>
             <img class="logo" src="https://upload.wikimedia.org/wikipedia/commons/7/71/Spotify.png" alt="">
-        </header>
+    </header>
 
-        <main id="site_main">
+    <main id="site_main">
 
-            <div class="container">
+        <div class="container">
             <?php foreach ($lista as $value) {
                 # code... 
                 //var_dump($value['title'])?>
-                <div class="song">
-                    <img src="<?= $value['poster']; ?>" alt="">
-                    <div class="box_text">
-                        <h4 class="title"><?= $value['title']; ?></h4>
-                        <p class="text"><?= $value['author']; ?></p>
-                        <p class="text"><?= $value['year']; ?></p>
-                    </div>
+            <div class="song">
+                <img src="<?= $value['poster']; ?>" alt="">
+                <div class="box_text">
+                    <h4 class="title"><?= $value['title']; ?></h4>
+                    <p class="text"><?= $value['author']; ?></p>
+                    <p class="text"><?= $value['year']; ?></p>
                 </div>
+            </div>
             <?php
             }?>
 
-            </div>
+        </div>
         
-        </main>
-    </div>
+    </main>
+    
 </body>
 </html>
