@@ -86,7 +86,7 @@ $lista = [
     <div id="app">
 
         <header>
-            <img class="logo" src="./assets/img/logo.png" alt="">
+            <img class="logo" src="https://upload.wikimedia.org/wikipedia/commons/7/71/Spotify.png" alt="">
         </header>
 
         <main id="site_main">
